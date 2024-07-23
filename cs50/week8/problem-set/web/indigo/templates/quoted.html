@@ -1,0 +1,108 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    {{ quote["ticker"] }} Quote
+{% endblock %}
+
+{% block main %}
+    <h4>{{ quote["ticker"] }}</h4>
+    <h5>{{ quote["name"] }}</h5>
+    <h3>{{ quote["price"]|format_real }} USD</h3>
+    <h4 class="colourChanges">{{ quote["change"]|format_real|add_positive_sign }} USD</h4>
+    <h4 class="colourChanges">{{ quote["changePercent"]|format_percent|add_positive_sign }}%</h4>
+    </br>
+    <h4>MARKET INFORMATION</h4>
+    <table>
+        <tr>
+            <th>YTD CHANGE (USD)</th>
+            <th>YTD CHANGE (%)</th>
+            <th>MARKET STATUS</th>
+        </tr>
+        <tr>
+            <td class="colourChanges">{{ quote["ytdChange"]|format_real|add_positive_sign }}</td>
+            <td class="colourChanges">{{ quote["ytdChangePercent"]|format_percent|add_positive_sign }}</td>
+            <td class="colourStatuses">{{ quote["isMarketOpen"]|to_market_status }}</td>
+        </tr>
+    </table>
+    </br>
+    <table>
+        <tr>
+            <th>52-WEEK LOW (USD)</th>
+            <th>52-WEEK HIGH (USD)</th>
+            <th>MARKET CAP (USD)</th>
+        </tr>
+        <tr>
+            <td>{{ quote["week52Low"]|format_real }}</td>
+            <td>{{ quote["week52High"]|format_real }}</td>
+            <td>{{ quote["marketCap"]|format_market_cap }}</td>
+        </tr>
+    </table>
+    </br>
+    <h4>ADDITIONAL INFORMATION</h4>
+    <table>
+        <tr>
+            <th>EXCHANGE</th>
+            <th>INDUSTRY</th>
+            <th>SECTOR</th>
+        </tr>
+        <tr>
+            <td>{{ info["exchange"] }}</td>
+            <td>{{ info["industry"] }}</td>
+            <td>{{ info["sector"] }}</td>
+        </tr>
+    </table>
+    </br>
+    <table>
+        <tr>
+            <th>CEO</th>
+            <th>LOCATION</th>
+            <th>WEBSITE</th>
+        </tr>
+        <tr>
+            <td>{{ info["CEO"] }}</td>
+            <td>{{ info["location"] }}</td>
+            <td><a href="{{ info['website'] }}" target="_blank" class="normal-link"</a>{{ info["website"] }}</td>
+        </tr>
+    </table>
+    </br>
+    <table>
+        <tr><th>LATEST UPDATE (UTF)</th></tr>
+        <tr><td>{{ quote["latestTime"] }}</td></tr>
+    </table>
+
+    <!--Colours positive and negative daily change and change percentages in green and red, respectively-->
+    <script>
+        function colourChanges() {
+            var tableDatas = document.querySelectorAll('.colourChanges');
+
+            for (var i = 0; i < tableDatas.length; i++) {
+                var temp = tableDatas[i];
+                if (temp.firstChild.nodeValue.indexOf('-') == 0) {
+                    temp.className = "negative";
+                }
+                else if (!(temp.firstChild.nodeValue.indexOf('0') == 0)) {
+                    temp.className = "positive";
+                }
+            }
+        }
+        onload = colourChanges();
+    </script>
+
+    <!--Colours 'OPEN' and 'CLOSED' market statuses in green and red, respectively-->
+    <script>
+        function colourStatuses() {
+            var tableDatas = document.querySelectorAll('.colourStatuses');
+
+            for (var i = 0; i < tableDatas.length; i++) {
+                var temp = tableDatas[i];
+                if (temp.firstChild.nodeValue.indexOf('O') == 0) {
+                    temp.className = "open";
+                }
+                else {
+                    temp.className = "closed";
+                }
+            }
+        }
+        onload = colourStatuses();
+    </script>
+{% endblock %}

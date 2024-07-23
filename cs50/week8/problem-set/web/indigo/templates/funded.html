@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Funded
+{% endblock %}
+
+{% block main %}
+    <h3>
+        Funded
+    </h3>
+    </br>
+    <p>${{ cash_increase|format_real }} (${{ cash_increase|format_market_cap }}) has been added to your account.</p>
+{% endblock %}

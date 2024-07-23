@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Formulae
+{% endblock %}
+
+{% block main %}
+    <h3>Formulae</h3>
+    </br>
+    <table>
+        <colgroup>
+            <col style="width: 6px">  
+            <col style="width: 1px"> 
+            <col style="width: 7px"> 
+            <col style="width: 1px">  
+            <col style="width: 30px">  
+         </colgroup>
+
+        <tr>
+            <td><span class="variable">STOCKS ALLOCATION</span></td>
+            <td><span class="symbol">=</span></td>
+            <td><span class="symbol">(</span><span class="variable">STOCKS</span> <span class="symbol">/</span> <span class="variable">TOTAL</span><span class="symbol">)</td>
+            <td><span class="symbol">x</span></td>
+            <td><span class="symbol">100</span></td>
+        </tr>
+        <tr>
+            <td><span class="variable">CASH ALLOCATION</span></td>
+            <td><span class="symbol">=</span></td>
+            <td><span class="symbol">(</span><span class="variable">CASH</span> <span class="symbol">/</span> <span class="variable">TOTAL</span><span class="symbol">)</td>
+            <td><span class="symbol">x</span></td>
+            <td><span class="symbol">100</span></td>
+        </tr>
+        <tr>
+            <td><span class="variable">T. ALLOCATION</span></td>
+            <td><span class="symbol">=</span></td>
+            <td><span class="symbol">(</span><span class="variable">MARKET VALUE</span> <span class="symbol">/</span> <span class="variable">TOTAL</span><span class="symbol">)</td>
+            <td><span class="symbol">x</span></td>
+            <td><span class="symbol">100</span></td>
+        </tr>
+        <tr>
+            <td><span class="variable">S. ALLOCATION</span></td>
+            <td><span class="symbol">=</span></td>
+            <td><span class="symbol">(</span><span class="variable">MARKET VALUE</span> <span class="symbol">/</span> <span class="variable">STOCKS</span><span class="symbol">)</td>
+            <td><span class="symbol">x</span></td>
+            <td><span class="symbol">100</span></td>
+        </tr>
+    </table>
+{% endblock %}

@@ -1,0 +1,217 @@
+nav {
+    /* Changes size of navigation bar */
+    height: 80px;
+    padding: 28px !important;
+}
+
+nav .navbar-brand {
+    /* Changes font of navigation bar logo */
+    font-family: "Montagu Slab";
+
+    /* Changes font size of navigation bar logo */
+    font-size: 28px;
+
+    /* Changes letter-spacing size of navigation bar logo */
+    letter-spacing: -1px;
+}
+
+.nav-link {
+    color: #FFFFFF !important;
+    font-weight: 200 !important;
+}
+
+.nav-link:hover {
+    color: #9068DE !important;
+}
+
+.normal-link {
+    color: #FFFFFF !important;
+}
+
+.normal-link:hover {
+    color: #9068DE !important;
+    text-decoration: none !important;
+}
+
+.bg-dark {
+    /* Changes colour of navigation bar background */
+    background-color: #080501 !important;
+}
+
+.border-bottom {
+    /* Remove bottom border of navigation bar */
+    border-bottom: none !important;
+}
+
+.border-top {
+    /* Remove top border of footer bar */
+    border-top: none !important;
+}
+
+main .form-control {
+    /* Centers form controls */
+    display: inline-block;
+
+    /* Overides Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+main {
+    /* Enables horizontal scrolling */
+    overflow-x: auto;
+
+    /* Left-aligns contents */
+    text-align: center;
+
+    /* establish minimum height of webpage using vh and and navbar heights */
+    min-height: calc(100vh - 70px);
+}
+
+body {
+    padding-top: 80px; 
+    font-family: "Archivo";
+    background-color: #080501;
+    color: #FFFFFF;
+}
+
+main img {
+    /* constrain images on small screens */
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 192px;
+}
+h2 {
+    font-size: 96px;
+}
+h3 {
+    font-size: 36px;
+    text-align: left;
+}
+h4 {
+    font-size: 24px;
+    text-align: left;
+}
+h5 {
+    font-size: 18px;
+    text-align: left;
+}
+h6 {
+    font-size: 16px;
+    text-align: left;
+}
+
+p {
+    font-size: 18px;
+    text-align: left;
+}
+
+footer {
+    height: 70px;
+    background-color: #080501;
+    font-size: 16px !important;
+    font-weight: 200 !important;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+    table-layout: fixed;
+}
+
+th {
+    color: #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+    font-size: 12px;
+}
+
+.form-control:focus {
+    /*Change text-field border colour*/
+    border-color: #9068DE;
+
+    /*Change text-field glow colour*/
+    box-shadow: 0 0 0 0.3rem rgba(144, 104, 222, 0.5);
+}
+
+/*Change button properities (interaction)*/
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited {
+    background-color: #6A36D3 !important;
+    border-color: #6A36D3 !important;
+}
+
+/*Change button properities (static)*/
+.btn-primary {
+    color: #FFFFFF !important;
+    background-color: #9068DE !important;
+    border-color: #9068DE !important;
+}
+
+.btn-primary:focus {
+    /*Change after-click shadow*/
+    box-shadow: 0 0 0 0.2rem rgba(106, 54, 211, 0.25) !important;
+}
+
+/*Color positive price and price percentage changes in green */
+.positive {
+    color: #2EBE2E;
+}
+
+/*Color negative price and price percentage changes in red */
+.negative {
+    color: #FF0000;
+}
+
+/*Color 'OPEN' market statuses in green */
+.open {
+    color: #2EBE2E;
+}
+
+/*Color 'CLOSE' market statuses in red */
+.closed {
+    color: #FF0000;
+}
+
+/* Left-align bullet points */
+ul {
+    text-align: left;
+}
+
+/* Right-align numbers in tables */
+.number {
+    text-align: right;
+}
+
+.header-center {
+    text-align: center;
+}
+
+
+.variable {
+    font-size: 12px;
+    color: #82888F;
+}
+
+.symbol {
+    font-size: 12px;
+    color: #F2F2F4;
+}
+
+.clarification {
+    font-size: 12px;
+    color: #FF0000;
+}
+
+.parent {
+    position: relative;
+}
+
+.child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

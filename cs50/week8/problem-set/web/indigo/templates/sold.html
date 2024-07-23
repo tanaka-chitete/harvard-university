@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    {{ old_holding[2] }} Sold
+{% endblock %}
+
+{% block main %}
+    <h3>Sold</h3>
+    </br>
+    <h4>{{ old_holding[2] }}</h4>
+    <h5>{{ old_holding[3] }}</h5>
+    </br>
+    <table>
+        <colgroup>
+           <col style="width: 15%;">  <!--TICKER-->
+           <col style="width: 100%;"> <!--NAME-->
+           <col style="width: 25%;">  <!--QUANTITY CHANGE-->
+           <col style="width: 30%;">  <!--CASH CHANGE (USD)-->
+           <col style="width: 20%;">  <!--TIME (UTC)-->
+           <col style="width: 25%;">  <!--DATE (UTC)-->
+           <col style="width: 10%;">  <!--ID-->
+        </colgroup>
+
+        <tr>
+            <th>TICKER</th>
+            <th>NAME</th>
+            <th class="number">QUANTITY CHANGE</th>
+            <th class="number">CASH CHANGE (USD)</th>
+            <th class="number">TIME (UTC)</th>
+            <th class="number">DATE (UTC)</th>
+            <th class="number">ID</th>
+        </tr>
+        <tr>
+            <td>{{ old_holding[2] }}</td>
+            <td>{{ old_holding[3] }}</td>
+            <td class="number">{{ old_holding[4]|format_whole }}</td>
+            <td class="number">{{ old_holding[5]|format_real|add_positive_sign }}</td>
+            <td class="number">{{ old_holding[6] }}</td>
+            <td class="number">{{ old_holding[7] }}</td>
+            <td class="number">{{ old_holding[0] }}</td>
+        </tr>
+    </table>
+{% endblock %}

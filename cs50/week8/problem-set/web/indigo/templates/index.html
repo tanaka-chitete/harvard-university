@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Holdings
+{% endblock %}
+
+{% block main %}
+    <h3>Holdings</h3>
+    </br>
+    <h4>OVERVIEW</h4>
+    <table>
+        <tr>
+            <th>TOTAL (USD)</th>
+            <th>STOCKS (USD)</th>
+            <th>STOCKS (%)</th>
+            <th>CASH (USD)</th>
+            <th>CASH (%)</th>
+        </tr>
+        <tr>
+            <td>{{ total|format_real }}</td>
+            <td>{{ stocks|format_real }}</td>
+            <td>{{ stocks_allocation|format_percent }}</td>
+            <td>{{ cash|format_real }}</td>
+            <td>{{ cash_allocation|format_percent }}</td>
+        <tr>
+    </table>
+    </br>
+    <h4>STOCKS</h4>
+    <table>
+        <colgroup>
+           <col style="width: 15%">  <!--TICKER-->
+           <col style="width: 100%"> <!--NAME-->
+           <col style="width: 20%">  <!--QUANTITY-->
+           <col style="width: 21%">  <!--PRICE (USD)-->
+           <col style="width: 27%">  <!--VALUE (USD)-->
+           <col style="width: 19%">  <!--STOCKS (%)-->
+           <col style="width: 16%">  <!--TOTAL (%)-->
+        </colgroup>
+
+        <tr>
+            <th>TICKER</th>
+            <th>NAME</th>
+            <th class="number">QUANTITY</th>
+            <th class="number">PRICE (USD)</th>
+            <th class="number">VALUE (USD)</th>
+            <th class="number">STOCKS (%)</th>
+            <th class="number">TOTAL (%)</th>
+        </tr>
+        {% for h in holdings %}
+        <tr>
+            <td>{{ h[2] }}</td>
+            <td>{{ h[3] }}</td>
+            <td class="number">{{ h[4]|format_whole }}</td>
+            <td class="number">{{ h[5]|format_real }}</td>
+            <td class="number">{{ h[6]|format_real }}</td>
+            <td class="number">{{ h[7]|format_percent }}</td>
+            <td class="number">{{ h[8]|format_percent }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

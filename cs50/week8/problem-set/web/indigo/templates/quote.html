@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <div class="child">
+        <h3 class="header-center">Quote</h3>
+        </br>
+        <form action="/quote" method="post">
+            <!--'Ticker' field-->
+            <div class="form-group">
+                <input autocomplete="off" autofocus class="form-control" name="ticker" placeholder="Ticker" type="text">
+            </div>
+
+            <!--'Get' button-->
+            <button class="btn btn-primary" type="submit">Get</button>
+        </form>
+    </div>
+{% endblock %}

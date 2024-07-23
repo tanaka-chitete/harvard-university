@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Fund
+{% endblock %}
+
+{% block main %}
+    <div class="child">
+        <h3 class="header-center">Fund</h3>
+        </br>
+        <form action="/fund" method="post">
+            <!--'Amount' field-->
+            <div class="form-group">
+                <input autocomplete="off" class="form-control" min="0.01" step="any" name="amount" placeholder="Amount" type="number">
+            </div>
+
+            <!--'Password' field-->
+            <div class="form-group">
+                <input class="form-control" name="password" placeholder="Password" type="password">
+            </div>
+
+            <!--'Confirmation' field-->
+            <div class="form-group">
+                <input class="form-control" name="confirmation" placeholder="Confirmation" type="password">
+            </div>
+
+            <!--'Fund'-->
+            <button class="btn btn-primary" type="submit">Fund</button>
+        </form>
+    </div>
+{% endblock %}
