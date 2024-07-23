@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    {{ ticker }} Quoted
+{% endblock %}
+
+{% block main %}
+    <h3>
+        Quoted
+    </h3>
+    </br>
+    <p>A share of {{ name }} ({{ ticker }}) costs {{ price }} USD.</p>
+{% endblock %}

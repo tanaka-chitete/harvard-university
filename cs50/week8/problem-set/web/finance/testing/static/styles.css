@@ -1,0 +1,130 @@
+nav .navbar-brand
+{
+    /* size for brand */
+    font-size: xx-large;
+}
+
+/* colors for brand */
+nav .navbar-brand .black
+{
+    color: #000000;
+}
+nav .navbar-brand .white
+{
+    color: #F2F2F4;
+}
+nav .navbar-brand .blue
+{
+    color: #2c7cfc;
+}
+nav .navbar-brand .navy-blue
+{
+    color: #161626;
+}
+
+nav .navbar-nav li a
+{
+    /* change colour of navbar text*/
+    color: #F2F2F4 !important;
+    margin-bottom:10px;
+}
+
+.bg-dark
+{
+    /* change colour of navbar background*/
+    background-color: #000000 !important;
+}
+
+.border
+{
+    /* remove default navbar border */
+    border: 0 !important;
+
+    /* change navbar border and colour */
+    border-bottom: 1px solid #2c7cfc !important;
+}
+
+main .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+main
+{
+    /* scroll horizontally as needed */
+    overflow-x: auto;
+
+    /* center contents */
+    text-align: center;
+
+    /* establish minimum height of webpage using vh and, navbar and footer heights */
+    /*min-height: calc(100vh - 78px - 60px);*/
+
+    /* establish minimum height of webpage using vh and and navbar heights */
+    min-height: calc(100vh - 78px);
+}
+
+main img
+{
+    /* constrain images on small screens */
+    max-width: 100%;
+}
+
+body
+{
+    font-family: "Bai Jamjuree";
+    background-color: #161626;
+    color: #F2F2F4;
+}
+
+footer
+{
+    background-color: #F2F2F4;
+    height: 60px;
+    font-size: 16px !important;
+}
+
+footer span
+{
+    margin-top: 17px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+h1
+{
+    font-size: 192px;
+    color: #2c7cfc;
+}
+h2
+{
+    font-size: 96px;
+}
+h3
+{
+    font-size: 36px;
+}
+h4
+{
+    font-size: 24px;
+}
+
+table
+{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+    table-layout: fixed;
+}
+tr
+{
+    border-bottom: 1px solid #F2F2F4;
+}
+th
+{
+    font-weight: 200;
+}

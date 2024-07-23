@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Add Funds
+{% endblock %}
+
+{% block main %}
+    <h3>
+        Add Funds
+    </h3>
+    </br>
+    <form action="/add-funds" method="post">
+        <div class="form-group">
+            <input autocomplete="off" class="form-control" min="0.01" step="any" name="amount" placeholder="Amount" type="number">
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="password" placeholder="Password" type="password">
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="confirmation" placeholder="Confirmation" type="password">
+        </div>
+        <button class="btn btn-primary" type="submit">Add Funds</button>
+    </form>
+{% endblock %}

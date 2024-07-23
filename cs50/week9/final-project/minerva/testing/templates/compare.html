@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Compare
+{% endblock %}
+
+{% block main %}
+    <h3 style="text-align: center; color: #5AB190">
+        COMPARE
+    </h3>
+    </br>
+    <form action="/compare" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="tickerOne" placeholder="TICKER" type="text">
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="tickerTwo" placeholder="TICKER" type="text">
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="tickerThree" placeholder="TICKER | OPTIONAL" type="text">
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="tickerFour" placeholder="TICKER | OPTIONAL" type="text">
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="tickerFive" placeholder="TICKER | OPTIONAL" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">COMPARE</button>
+    </form>
+{% endblock %}

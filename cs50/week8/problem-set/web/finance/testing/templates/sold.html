@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    {{ ticker }} Sold
+{% endblock %}
+
+{% block main %}
+    <h3>
+        Sold
+    </h3>
+    </br>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Ticker</th>
+            <th>Name</th>
+            <th>Shares</th>
+            <th>Price</th>
+            <th>Date</th>
+            <th>Time</th>
+        </tr>
+        <tr>
+            <td>{{ holding[0]["id"] }}</td>
+            <td>{{ holding[0]["ticker"] }}</td>
+            <td>{{ holding[0]["name"] }}</td>
+            <td>{{ holding[0]["shares"] }}</td>
+            <td>{{ holding[0]["price"] }}</td>
+            <td>{{ holding[0]["date"] }}</td>
+            <td>{{ holding[0]["time"] }}</td>
+        </tr>
+    </table>
+{% endblock %}
