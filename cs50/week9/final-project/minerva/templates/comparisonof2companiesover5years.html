@@ -1,0 +1,456 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    {{ listOfRatiosForCompanyOne[0]["ticker"] }} and {{ listOfRatiosForCompanyTwo[0]["ticker"] }} Comparison
+{% endblock %}
+
+{% block main %}
+    <div id="toStickify">
+        <h3 style="color: #5AB190">
+            {{ listOfRatiosForCompanyOne[0]["ticker"] }} AND {{ listOfRatiosForCompanyTwo[0]["ticker"] }} COMPARISON
+        </h3>
+    </div>
+    <div class="content">
+        </br>
+        <!--Profitability Ratios-->
+        <h3>
+            PROFITABILITY RATIOS
+        </h3>
+        <table>
+            <!--Header information-->
+            <tr>
+                <th></th>
+                <th></th>
+                <th>{{ listOfRatiosForCompanyOne[0]["date"] }}</th>
+                <th>{{ listOfRatiosForCompanyOne[1]["date"] }}</th>
+                <th>{{ listOfRatiosForCompanyOne[2]["date"] }}</th>
+                <th>{{ listOfRatiosForCompanyOne[3]["date"] }}</th>
+                <th>{{ listOfRatiosForCompanyOne[4]["date"] }}</th>
+            </tr>
+            <!--Operating Profit Margin-->
+            <!--Company One-->
+            <tr>
+                <td rowspan=2 style="text-align: center">OPM</td>
+                <td>{{ listOfRatiosForCompanyOne[0]["ticker"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[0]["operatingProfitMargin"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[1]["operatingProfitMargin"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[2]["operatingProfitMargin"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[3]["operatingProfitMargin"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[4]["operatingProfitMargin"] }}</td>
+            </tr>
+            <!--Company Two-->
+            <tr>
+                <td>{{ listOfRatiosForCompanyTwo[0]["ticker"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[0]["operatingProfitMargin"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[1]["operatingProfitMargin"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[2]["operatingProfitMargin"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[3]["operatingProfitMargin"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[4]["operatingProfitMargin"] }}</td>
+            </tr>
+            <!--Operating Profit Margin-->
+            <!--Company One-->
+            <tr>
+                <td rowspan=2 style="text-align: center">GPM</td>
+                <td>{{ listOfRatiosForCompanyOne[0]["ticker"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[0]["grossProfitMargin"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[1]["grossProfitMargin"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[2]["grossProfitMargin"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[3]["grossProfitMargin"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[4]["grossProfitMargin"] }}</td>
+            </tr>
+            <!--Company Two-->
+            <tr>
+                <td>{{ listOfRatiosForCompanyTwo[0]["ticker"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[0]["grossProfitMargin"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[1]["grossProfitMargin"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[2]["grossProfitMargin"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[3]["grossProfitMargin"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[4]["grossProfitMargin"] }}</td>
+            </tr>
+            <!--Net Profit Margin-->
+            <!--Company One-->
+            <tr>
+                <td rowspan=2 style="text-align: center">NPM</td>
+                <td>{{ listOfRatiosForCompanyOne[0]["ticker"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[0]["netProfitMargin"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[1]["netProfitMargin"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[2]["netProfitMargin"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[3]["netProfitMargin"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[4]["netProfitMargin"] }}</td>
+            </tr>
+            <!--Company Two-->
+            <tr>
+                <td>{{ listOfRatiosForCompanyTwo[0]["ticker"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[0]["netProfitMargin"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[1]["netProfitMargin"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[2]["netProfitMargin"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[3]["netProfitMargin"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[4]["netProfitMargin"] }}</td>
+            </tr>
+            <!--Return on Assets-->
+            <!--Company One-->
+            <tr>
+                <td rowspan=2 style="text-align: center">ROA</td>
+                <td>{{ listOfRatiosForCompanyOne[0]["ticker"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[0]["returnOnAssets"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[1]["returnOnAssets"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[2]["returnOnAssets"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[3]["returnOnAssets"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[4]["returnOnAssets"] }}</td>
+            </tr>
+            <!--Company Two-->
+            <tr>
+                <td>{{ listOfRatiosForCompanyTwo[0]["ticker"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[0]["returnOnAssets"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[1]["returnOnAssets"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[2]["returnOnAssets"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[3]["returnOnAssets"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[4]["returnOnAssets"] }}</td>
+            </tr>
+            <!--Return on Equity-->
+            <!--Company One-->
+            <tr>
+                <td rowspan=2 style="text-align: center">ROE</td>
+                <td>{{ listOfRatiosForCompanyOne[0]["ticker"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[0]["returnOnEquity"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[1]["returnOnEquity"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[2]["returnOnEquity"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[3]["returnOnEquity"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[4]["returnOnEquity"] }}</td>
+            </tr>
+            <!--Company Two-->
+            <tr>
+                <td>{{ listOfRatiosForCompanyTwo[0]["ticker"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[0]["returnOnEquity"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[1]["returnOnEquity"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[2]["returnOnEquity"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[3]["returnOnEquity"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[4]["returnOnEquity"] }}</td>
+            </tr>
+        </table>
+        </br>
+        <!--Liquidity Ratios-->
+        <h3>
+            LIQUIDITY RATIOS
+        </h3>
+        <table>
+            <!--Header information-->
+            <tr>
+                <th></th>
+                <th></th>
+                <th>{{ listOfRatiosForCompanyOne[0]["date"] }}</th>
+                <th>{{ listOfRatiosForCompanyOne[1]["date"] }}</th>
+                <th>{{ listOfRatiosForCompanyOne[2]["date"] }}</th>
+                <th>{{ listOfRatiosForCompanyOne[3]["date"] }}</th>
+                <th>{{ listOfRatiosForCompanyOne[4]["date"] }}</th>
+            </tr>
+            <!--Current Ratio-->
+            <!--Company One-->
+            <tr>
+                <td rowspan=2 style="text-align: center">CAR</td>
+                <td>{{ listOfRatiosForCompanyOne[0]["ticker"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[0]["currentRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[1]["currentRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[2]["currentRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[3]["currentRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[4]["currentRatio"] }}</td>
+            </tr>
+            <!--Company Two-->
+            <tr>
+                <td>{{ listOfRatiosForCompanyTwo[0]["ticker"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[0]["currentRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[1]["currentRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[2]["currentRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[3]["currentRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[4]["currentRatio"] }}</td>
+            </tr>
+            <!--Quick Ratio-->
+            <!--Company One-->
+            <tr>
+                <td rowspan=2 style="text-align: center">QAR</td>
+                <td>{{ listOfRatiosForCompanyOne[0]["ticker"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[0]["quickRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[1]["quickRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[2]["quickRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[3]["quickRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[4]["quickRatio"] }}</td>
+            </tr>
+            <!--Company Two-->
+            <tr>
+                <td>{{ listOfRatiosForCompanyTwo[0]["ticker"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[0]["quickRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[1]["quickRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[2]["quickRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[3]["quickRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[4]["quickRatio"] }}</td>
+            </tr>
+        </table>
+        </br>
+        <!--Leverage Ratios-->
+        <h3>
+            LEVERAGE RATIOS
+        </h3>
+        <table>
+            <!--Header information-->
+            <tr>
+                <th></th>
+                <th></th>
+                <th>{{ listOfRatiosForCompanyOne[0]["date"] }}</th>
+                <th>{{ listOfRatiosForCompanyOne[1]["date"] }}</th>
+                <th>{{ listOfRatiosForCompanyOne[2]["date"] }}</th>
+                <th>{{ listOfRatiosForCompanyOne[3]["date"] }}</th>
+                <th>{{ listOfRatiosForCompanyOne[4]["date"] }}</th>
+            </tr>
+            <!--Debt-Asset Ratio-->
+            <!--Company One-->
+            <tr>
+                <td rowspan=2 style="text-align: center">DAR</td>
+                <td>{{ listOfRatiosForCompanyOne[0]["ticker"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[0]["debtAssetRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[1]["debtAssetRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[2]["debtAssetRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[3]["debtAssetRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[4]["debtAssetRatio"] }}</td>
+            </tr>
+            <!--Company Two-->
+            <tr>
+                <td>{{ listOfRatiosForCompanyTwo[0]["ticker"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[0]["debtAssetRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[1]["debtAssetRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[2]["debtAssetRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[3]["debtAssetRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[4]["debtAssetRatio"] }}</td>
+            </tr>
+            <!--Debt-Equity Ratio-->
+            <!--Company One-->
+            <tr>
+                <td rowspan=2 style="text-align: center">DER</td>
+                <td>{{ listOfRatiosForCompanyOne[0]["ticker"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[0]["debtEquityRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[1]["debtEquityRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[2]["debtEquityRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[3]["debtEquityRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[4]["debtEquityRatio"] }}</td>
+            </tr>
+            <!--Company Two-->
+            <tr>
+                <td>{{ listOfRatiosForCompanyTwo[0]["ticker"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[0]["debtEquityRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[1]["debtEquityRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[2]["debtEquityRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[3]["debtEquityRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[4]["debtEquityRatio"] }}</td>
+            </tr>
+            <!--Interest Coverage Ratio-->
+            <!--Company One-->
+            <tr>
+                <td rowspan=2 style="text-align: center">ICR</td>
+                <td>{{ listOfRatiosForCompanyOne[0]["ticker"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[0]["interestCoverageRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[1]["interestCoverageRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[2]["interestCoverageRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[3]["interestCoverageRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[4]["interestCoverageRatio"] }}</td>
+            </tr>
+            <!--Company Two-->
+            <tr>
+                <td>{{ listOfRatiosForCompanyTwo[0]["ticker"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[0]["interestCoverageRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[1]["interestCoverageRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[2]["interestCoverageRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[3]["interestCoverageRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[4]["interestCoverageRatio"] }}</td>
+            </tr>
+        </table>
+        </br>
+        <!--Efficiency Ratios-->
+        <h3>
+            EFFICIENCY RATIOS
+        </h3>
+        <table>
+            <!--Header information-->
+            <tr>
+                <th></th>
+                <th></th>
+                <th>{{ listOfRatiosForCompanyOne[0]["date"] }}</th>
+                <th>{{ listOfRatiosForCompanyOne[1]["date"] }}</th>
+                <th>{{ listOfRatiosForCompanyOne[2]["date"] }}</th>
+                <th>{{ listOfRatiosForCompanyOne[3]["date"] }}</th>
+                <th>{{ listOfRatiosForCompanyOne[4]["date"] }}</th>
+            </tr>
+            <!--Inventory Turnover-->
+            <!--Company One-->
+            <tr>
+                <td rowspan=2 style="text-align: center">ITR</td>
+                <td>{{ listOfRatiosForCompanyOne[0]["ticker"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[0]["inventoryTurnover"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[1]["inventoryTurnover"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[2]["inventoryTurnover"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[3]["inventoryTurnover"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[4]["inventoryTurnover"] }}</td>
+            </tr>
+            <!--Company Two-->
+            <tr>
+                <td>{{ listOfRatiosForCompanyTwo[0]["ticker"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[0]["inventoryTurnover"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[1]["inventoryTurnover"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[2]["inventoryTurnover"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[3]["inventoryTurnover"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[4]["inventoryTurnover"] }}</td>
+            </tr>
+            <!--Receivables Turnover-->
+            <!--Company One-->
+            <tr>
+                <td rowspan=2 style="text-align: center">RTR</td>
+                <td>{{ listOfRatiosForCompanyOne[0]["ticker"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[0]["receivablesTurnover"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[1]["receivablesTurnover"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[2]["receivablesTurnover"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[3]["receivablesTurnover"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[4]["receivablesTurnover"] }}</td>
+            </tr>
+            <!--Company Two-->
+            <tr>
+                <td>{{ listOfRatiosForCompanyTwo[0]["ticker"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[0]["receivablesTurnover"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[1]["receivablesTurnover"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[2]["receivablesTurnover"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[3]["receivablesTurnover"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[4]["receivablesTurnover"] }}</td>
+            </tr>
+            <!--Payables Turnover-->
+            <!--Company One-->
+            <tr>
+                <td rowspan=2 style="text-align: center">PTR</td>
+                <td>{{ listOfRatiosForCompanyOne[0]["ticker"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[0]["payablesTurnover"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[1]["payablesTurnover"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[2]["payablesTurnover"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[3]["payablesTurnover"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[4]["payablesTurnover"] }}</td>
+            </tr>
+            <!--Company Two-->
+            <tr>
+                <td>{{ listOfRatiosForCompanyTwo[0]["ticker"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[0]["payablesTurnover"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[1]["payablesTurnover"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[2]["payablesTurnover"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[3]["payablesTurnover"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[4]["payablesTurnover"] }}</td>
+            </tr>
+            <!--Asset Turnover-->
+            <!--Company One-->
+            <tr>
+                <td rowspan=2 style="text-align: center">ATR</td>
+                <td>{{ listOfRatiosForCompanyOne[0]["ticker"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[0]["assetTurnover"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[1]["assetTurnover"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[2]["assetTurnover"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[3]["assetTurnover"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[4]["assetTurnover"] }}</td>
+            </tr>
+            <!--Company Two-->
+            <tr>
+                <td>{{ listOfRatiosForCompanyTwo[0]["ticker"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[0]["assetTurnover"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[1]["assetTurnover"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[2]["assetTurnover"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[3]["assetTurnover"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[4]["assetTurnover"] }}</td>
+            </tr>
+        </table>
+        </br>
+        <!--Market Ratios-->
+        <h3>
+            MARKET RATIOS
+        </h3>
+        <table>
+            <!--Header information-->
+            <tr>
+                <th></th>
+                <th></th>
+                <th>{{ listOfRatiosForCompanyOne[0]["date"] }}</th>
+                <th>{{ listOfRatiosForCompanyOne[1]["date"] }}</th>
+                <th>{{ listOfRatiosForCompanyOne[2]["date"] }}</th>
+                <th>{{ listOfRatiosForCompanyOne[3]["date"] }}</th>
+                <th>{{ listOfRatiosForCompanyOne[4]["date"] }}</th>
+            </tr>
+            <!--Earnings per Share-->
+            <!--Company One-->
+            <tr>
+                <td rowspan=2 style="text-align: center">EPS</td>
+                <td>{{ listOfRatiosForCompanyOne[0]["ticker"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[0]["earningsPerShare"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[1]["earningsPerShare"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[2]["earningsPerShare"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[3]["earningsPerShare"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[4]["earningsPerShare"] }}</td>
+            </tr>
+            <!--Company Two-->
+            <tr>
+                <td>{{ listOfRatiosForCompanyTwo[0]["ticker"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[0]["earningsPerShare"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[1]["earningsPerShare"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[2]["earningsPerShare"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[3]["earningsPerShare"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[4]["earningsPerShare"] }}</td>
+            </tr>
+            <!--Price-Earnings Ratio-->
+            <!--Company One-->
+            <tr>
+                <td rowspan=2 style="text-align: center">PER</td>
+                <td>{{ listOfRatiosForCompanyOne[0]["ticker"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[0]["priceEarningsRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[1]["priceEarningsRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[2]["priceEarningsRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[3]["priceEarningsRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[4]["priceEarningsRatio"] }}</td>
+            </tr>
+            <!--Company Two-->
+            <tr>
+                <td>{{ listOfRatiosForCompanyTwo[0]["ticker"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[0]["priceEarningsRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[1]["priceEarningsRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[2]["priceEarningsRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[3]["priceEarningsRatio"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[4]["priceEarningsRatio"] }}</td>
+            </tr>
+            <!--Dividend Yield-->
+            <!--Company One-->
+            <tr>
+                <td rowspan=2 style="text-align: center">DYR</td>
+                <td>{{ listOfRatiosForCompanyOne[0]["ticker"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[0]["dividendYield"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[1]["dividendYield"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[2]["dividendYield"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[3]["dividendYield"] }}</td>
+                <td>{{ listOfRatiosForCompanyOne[4]["dividendYield"] }}</td>
+            </tr>
+            <!--Company Two-->
+            <tr>
+                <td>{{ listOfRatiosForCompanyTwo[0]["ticker"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[0]["dividendYield"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[1]["dividendYield"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[2]["dividendYield"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[3]["dividendYield"] }}</td>
+                <td>{{ listOfRatiosForCompanyTwo[4]["dividendYield"] }}</td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        window.onscroll = function() {stickify()};
+        
+        var header = document.getElementById("toStickify");
+        var sticky = header.offsetTop + 64; // '+64' prevents jerky movements
+        
+        function stickify() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } 
+            else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+{% endblock %}

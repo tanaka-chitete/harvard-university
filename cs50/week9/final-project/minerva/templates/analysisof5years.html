@@ -1,0 +1,264 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    {{ listOfRatios[0]["ticker"] }} Analysis
+{% endblock %}
+
+{% block main %}
+    <div id="toStickify">
+        <h3 style="color: #5AB190">
+            {{ listOfRatios[0]["ticker"] }} ANALYSIS
+        </h3>
+    </div>
+    <div class="content">
+        </br>
+        <!--Profitability Ratios-->
+        <h3>
+            PROFITABILITY RATIOS
+        </h3>
+        <table>
+            <!--Header information-->
+            <tr>
+                <th></th>
+                <th>{{ listOfRatios[0]["date"] }}</th>
+                <th>{{ listOfRatios[1]["date"] }}</th>
+                <th>{{ listOfRatios[2]["date"] }}</th>
+                <th>{{ listOfRatios[3]["date"] }}</th>
+                <th>{{ listOfRatios[4]["date"] }}</th>
+            </tr>
+            <!--Operating Profit Margin-->
+            <tr>
+                <td>OPM</td>
+                <td>{{ listOfRatios[0]["operatingProfitMargin"] }}</td>
+                <td>{{ listOfRatios[1]["operatingProfitMargin"] }}</td>
+                <td>{{ listOfRatios[2]["operatingProfitMargin"] }}</td>
+                <td>{{ listOfRatios[3]["operatingProfitMargin"] }}</td>
+                <td>{{ listOfRatios[4]["operatingProfitMargin"] }}</td>
+            </tr>
+            <!--Gross Profit Margin-->
+            <tr>
+                <td>GPM</td>
+                <td>{{ listOfRatios[0]["grossProfitMargin"] }}</td>
+                <td>{{ listOfRatios[1]["grossProfitMargin"] }}</td>
+                <td>{{ listOfRatios[2]["grossProfitMargin"] }}</td>
+                <td>{{ listOfRatios[3]["grossProfitMargin"] }}</td>
+                <td>{{ listOfRatios[4]["grossProfitMargin"] }}</td>
+            </tr>
+            <!--Net Profit Margin-->
+            <tr>
+                <td>NPM</td>
+                <td>{{ listOfRatios[0]["netProfitMargin"] }}</td>
+                <td>{{ listOfRatios[1]["netProfitMargin"] }}</td>
+                <td>{{ listOfRatios[2]["netProfitMargin"] }}</td>
+                <td>{{ listOfRatios[3]["netProfitMargin"] }}</td>
+                <td>{{ listOfRatios[4]["netProfitMargin"] }}</td>
+            </tr>
+            <!--Return on Assets-->
+            <tr>
+                <td>ROA</td>
+                <td>{{ listOfRatios[0]["returnOnAssets"] }}</td>
+                <td>{{ listOfRatios[1]["returnOnAssets"] }}</td>
+                <td>{{ listOfRatios[2]["returnOnAssets"] }}</td>
+                <td>{{ listOfRatios[3]["returnOnAssets"] }}</td>
+                <td>{{ listOfRatios[4]["returnOnAssets"] }}</td>
+            </tr>
+            <!--Return on Equity-->
+            <tr>
+                <td>ROE</td>
+                <td>{{ listOfRatios[0]["returnOnEquity"] }}</td>
+                <td>{{ listOfRatios[1]["returnOnEquity"] }}</td>
+                <td>{{ listOfRatios[2]["returnOnEquity"] }}</td>
+                <td>{{ listOfRatios[3]["returnOnEquity"] }}</td>
+                <td>{{ listOfRatios[4]["returnOnEquity"] }}</td>
+            </tr>
+        </table>
+        </br>
+        <!--Liquidity Ratios-->
+        <h3>
+            LIQUIDITY RATIOS
+        </h3>
+        <table>
+            <!--Header information-->
+            <tr>
+                <th></th>
+                <th>{{ listOfRatios[0]["date"] }}</th>
+                <th>{{ listOfRatios[1]["date"] }}</th>
+                <th>{{ listOfRatios[2]["date"] }}</th>
+                <th>{{ listOfRatios[3]["date"] }}</th>
+                <th>{{ listOfRatios[4]["date"] }}</th>
+            </tr>
+            <!--Current Ratio-->
+            <tr>
+                <td>CAR</td>
+                <td>{{ listOfRatios[0]["currentRatio"] }}</td>
+                <td>{{ listOfRatios[1]["currentRatio"] }}</td>
+                <td>{{ listOfRatios[2]["currentRatio"] }}</td>
+                <td>{{ listOfRatios[3]["currentRatio"] }}</td>
+                <td>{{ listOfRatios[4]["currentRatio"] }}</td>
+            </tr>
+            <!--Quick Ratio-->
+            <tr>
+                <td>QAR</td>
+                <td>{{ listOfRatios[0]["quickRatio"] }}</td>
+                <td>{{ listOfRatios[1]["quickRatio"] }}</td>
+                <td>{{ listOfRatios[2]["quickRatio"] }}</td>
+                <td>{{ listOfRatios[3]["quickRatio"] }}</td>
+                <td>{{ listOfRatios[4]["quickRatio"] }}</td>
+            </tr>
+        </table>
+        </br>
+        <!--Leverage Ratios-->
+        <h3>
+            LEVERAGE RATIOS
+        </h3>
+        <table>
+            <!--Header information-->
+            <tr>
+                <th></th>
+                <th>{{ listOfRatios[0]["date"] }}</th>
+                <th>{{ listOfRatios[1]["date"] }}</th>
+                <th>{{ listOfRatios[2]["date"] }}</th>
+                <th>{{ listOfRatios[3]["date"] }}</th>
+                <th>{{ listOfRatios[4]["date"] }}</th>
+            </tr>
+            <!--Debt-Assets Ratio-->
+            <tr>
+                <td>DAR</td>
+                <td>{{ listOfRatios[0]["debtAssetRatio"] }}</td>
+                <td>{{ listOfRatios[1]["debtAssetRatio"] }}</td>
+                <td>{{ listOfRatios[2]["debtAssetRatio"] }}</td>
+                <td>{{ listOfRatios[3]["debtAssetRatio"] }}</td>
+                <td>{{ listOfRatios[4]["debtAssetRatio"] }}</td>
+            </tr>
+            <!--Debt-Equity Ratio-->
+            <tr>
+                <td>DER</td>
+                <td>{{ listOfRatios[0]["debtEquityRatio"] }}</td>
+                <td>{{ listOfRatios[1]["debtEquityRatio"] }}</td>
+                <td>{{ listOfRatios[2]["debtEquityRatio"] }}</td>
+                <td>{{ listOfRatios[3]["debtEquityRatio"] }}</td>
+                <td>{{ listOfRatios[4]["debtEquityRatio"] }}</td>
+            </tr>
+            <!--Interest Coverage Ratio-->
+            <tr>
+                <td>ICR</td>
+                <td>{{ listOfRatios[0]["interestCoverageRatio"] }}</td>
+                <td>{{ listOfRatios[1]["interestCoverageRatio"] }}</td>
+                <td>{{ listOfRatios[2]["interestCoverageRatio"] }}</td>
+                <td>{{ listOfRatios[3]["interestCoverageRatio"] }}</td>
+                <td>{{ listOfRatios[4]["interestCoverageRatio"] }}</td>
+            </tr>
+        </table>
+        </br>
+        <!--Efficiency Ratios-->
+        <h3>
+            EFFICIENCY RATIOS
+        </h3>
+        <table>
+            <!--Header information-->
+            <tr>
+                <th></th>
+                <th>{{ listOfRatios[0]["date"] }}</th>
+                <th>{{ listOfRatios[1]["date"] }}</th>
+                <th>{{ listOfRatios[2]["date"] }}</th>
+                <th>{{ listOfRatios[3]["date"] }}</th>
+                <th>{{ listOfRatios[4]["date"] }}</th>
+            </tr>
+            <!--Inventory Turnover-->
+            <tr>
+                <td>ITR</td>
+                <td>{{ listOfRatios[0]["inventoryTurnover"] }}</td>
+                <td>{{ listOfRatios[1]["inventoryTurnover"] }}</td>
+                <td>{{ listOfRatios[2]["inventoryTurnover"] }}</td>
+                <td>{{ listOfRatios[3]["inventoryTurnover"] }}</td>
+                <td>{{ listOfRatios[4]["inventoryTurnover"] }}</td>
+            </tr>
+            <!--Receivables Turnover-->
+            <tr>
+                <td>RTR</td>
+                <td>{{ listOfRatios[0]["receivablesTurnover"] }}</td>
+                <td>{{ listOfRatios[1]["receivablesTurnover"] }}</td>
+                <td>{{ listOfRatios[2]["receivablesTurnover"] }}</td>
+                <td>{{ listOfRatios[3]["receivablesTurnover"] }}</td>
+                <td>{{ listOfRatios[4]["receivablesTurnover"] }}</td>
+            </tr>
+            <!--Payables Turnover-->
+            <tr>
+                <td>PTR</td>
+                <td>{{ listOfRatios[0]["payablesTurnover"] }}</td>
+                <td>{{ listOfRatios[1]["payablesTurnover"] }}</td>
+                <td>{{ listOfRatios[2]["payablesTurnover"] }}</td>
+                <td>{{ listOfRatios[3]["payablesTurnover"] }}</td>
+                <td>{{ listOfRatios[4]["payablesTurnover"] }}</td>
+            </tr>
+            <!--Asset Turnover-->
+            <tr>
+                <td>ATR</td>
+                <td>{{ listOfRatios[0]["assetTurnover"] }}</td>
+                <td>{{ listOfRatios[1]["assetTurnover"] }}</td>
+                <td>{{ listOfRatios[2]["assetTurnover"] }}</td>
+                <td>{{ listOfRatios[3]["assetTurnover"] }}</td>
+                <td>{{ listOfRatios[4]["assetTurnover"] }}</td>
+            </tr>
+        </table>
+        </br>
+        <!--Market Ratios-->
+        <h3>
+            MARKET RATIOS
+        </h3>
+        <table>
+            <!--Header information-->
+            <tr>
+                <th></th>
+                <th>{{ listOfRatios[0]["date"] }}</th>
+                <th>{{ listOfRatios[1]["date"] }}</th>
+                <th>{{ listOfRatios[2]["date"] }}</th>
+                <th>{{ listOfRatios[3]["date"] }}</th>
+                <th>{{ listOfRatios[4]["date"] }}</th>
+            </tr>
+            <!--Earnings per Share-->
+            <tr>
+                <td>EPS</td>
+                <td>{{ listOfRatios[0]["earningsPerShare"] }}</td>
+                <td>{{ listOfRatios[1]["earningsPerShare"] }}</td>
+                <td>{{ listOfRatios[2]["earningsPerShare"] }}</td>
+                <td>{{ listOfRatios[3]["earningsPerShare"] }}</td>
+                <td>{{ listOfRatios[4]["earningsPerShare"] }}</td>
+            </tr>
+            <!--Price-Earnings Ratio-->
+            <tr>
+                <td>PER</td>
+                <td>{{ listOfRatios[0]["priceEarningsRatio"] }}</td>
+                <td>{{ listOfRatios[1]["priceEarningsRatio"] }}</td>
+                <td>{{ listOfRatios[2]["priceEarningsRatio"] }}</td>
+                <td>{{ listOfRatios[3]["priceEarningsRatio"] }}</td>
+                <td>{{ listOfRatios[4]["priceEarningsRatio"] }}</td>
+            </tr>
+            <!--Dividend Yield-->
+            <tr>
+                <td>DYR</td>
+                <td>{{ listOfRatios[0]["dividendYield"] }}</td>
+                <td>{{ listOfRatios[1]["dividendYield"] }}</td>
+                <td>{{ listOfRatios[2]["dividendYield"] }}</td>
+                <td>{{ listOfRatios[3]["dividendYield"] }}</td>
+                <td>{{ listOfRatios[4]["dividendYield"] }}</td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        window.onscroll = function() {stickify()};
+        
+        var header = document.getElementById("toStickify");
+        var sticky = header.offsetTop + 64; // '+64' prevents jerky movements
+        
+        function stickify() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } 
+            else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+{% endblock %}
