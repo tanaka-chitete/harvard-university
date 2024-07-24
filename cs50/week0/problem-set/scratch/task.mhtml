@@ -1,28 +1,28 @@
 From: <Saved by Blink>
 Snapshot-Content-Location: https://cs50.harvard.edu/x/2020/psets/0/scratch/
 Subject: Scratch - CS50x
-Date: Tue, 23 Jul 2024 16:19:38 +1000
+Date: Wed, 24 Jul 2024 14:43:08 +1000
 MIME-Version: 1.0
 Content-Type: multipart/related;
 	type="text/html";
-	boundary="----MultipartBoundary--SE1vrFejLOV0IcnsFIdHwQ99lFKGCDtAOgFaTd5dTd----"
+	boundary="----MultipartBoundary--ZxYlBb0ZNZ0LoNIxqZMnhKZUconwVXF944AIyu4Ags----"
 
 
-------MultipartBoundary--SE1vrFejLOV0IcnsFIdHwQ99lFKGCDtAOgFaTd5dTd----
+------MultipartBoundary--ZxYlBb0ZNZ0LoNIxqZMnhKZUconwVXF944AIyu4Ags----
 Content-Type: text/html
-Content-ID: <frame-A769D4A609171496F2E0688A1C2D2149@mhtml.blink>
+Content-ID: <frame-782743FBBCA15E63520FAE8A9E4759AE@mhtml.blink>
 Content-Transfer-Encoding: quoted-printable
 Content-Location: https://cs50.harvard.edu/x/2020/psets/0/scratch/
 
 <!DOCTYPE html><html lang=3D"en-us" class=3D"wf-ptsans-n4-active wf-ptsans-=
 n7-active wf-active"><head><meta http-equiv=3D"Content-Type" content=3D"tex=
 t/html; charset=3DUTF-8"><link rel=3D"stylesheet" type=3D"text/css" href=3D=
-"cid:css-98a8859c-97b4-41bc-b75a-f964dd62e672@mhtml.blink" /><link rel=3D"s=
-tylesheet" type=3D"text/css" href=3D"cid:css-ff61752f-63b1-4d4e-a445-9ac97a=
-a85d40@mhtml.blink" /><link rel=3D"stylesheet" type=3D"text/css" href=3D"ci=
-d:css-6b9a31f0-b585-4c32-9d3b-ccbb5cbc6dc2@mhtml.blink" /><link rel=3D"styl=
-esheet" type=3D"text/css" href=3D"cid:css-328f495c-95b0-4e0e-8391-a914d8e1c=
-539@mhtml.blink" />
+"cid:css-ed6b55fb-c5d8-4500-a0a6-0622dc6053db@mhtml.blink" /><link rel=3D"s=
+tylesheet" type=3D"text/css" href=3D"cid:css-7a851a64-2439-43e3-9dd5-f38dfd=
+b0f847@mhtml.blink" /><link rel=3D"stylesheet" type=3D"text/css" href=3D"ci=
+d:css-29e3416a-8d48-4105-8002-3eb013c93bc3@mhtml.blink" /><link rel=3D"styl=
+esheet" type=3D"text/css" href=3D"cid:css-58b43216-1561-43a9-aacf-15f3d2c28=
+71c@mhtml.blink" />
 <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1,=
  shrink-to-fit=3Dno"><meta property=3D"og:description" content=3D"Introduct=
 ion to the intellectual enterprises of computer science and the art of prog=
@@ -108,8 +108,8 @@ rd.edu/x</a> for the latest!</p></div>
 
             <div class=3D"row">
 
-                <aside class=3D"col-md" style=3D"height: 749px; top: 50px;"=
->
+                <aside class=3D"col-md" style=3D"height: 1244px; top: 50px;=
+">
 =20
                     <header><h1 data-id=3D"this-is-cs50x"><a href=3D"https:=
 //cs50.harvard.edu/x/2020/">This is CS50x</a></h1>
@@ -339,7 +339,7 @@ class=3D"fab fa-creative-commons mr-1"></i>License</a></p></nav>
 
                 </aside>
 
-                <main class=3D"col-md" style=3D"margin-bottom: 404px; margi=
+                <main class=3D"col-md" style=3D"margin-bottom: 899px; margi=
 n-top: 50px;">
 
                     <a data-id=3D"" id=3D"scratch" style=3D"top: -50px;"></=
@@ -492,10 +492,10 @@ at <a href=3D"https://cs50.me/cs50x">cs50.me/cs50x</a>!</p>
 
 
 </body></html>
-------MultipartBoundary--SE1vrFejLOV0IcnsFIdHwQ99lFKGCDtAOgFaTd5dTd----
+------MultipartBoundary--ZxYlBb0ZNZ0LoNIxqZMnhKZUconwVXF944AIyu4Ags----
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
-Content-Location: cid:css-98a8859c-97b4-41bc-b75a-f964dd62e672@mhtml.blink
+Content-Location: cid:css-ed6b55fb-c5d8-4500-a0a6-0622dc6053db@mhtml.blink
 
 @charset "utf-8";
 
@@ -515,10 +515,10 @@ r; border: 3px outset; padding: 1em 2em; background-color: rgb(221, 221, 22=
  normal; letter-spacing: normal; word-spacing: normal; overflow-wrap: norma=
 l; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; box=
 -shadow: rgb(128, 128, 128) 0px 10px 20px; }
-------MultipartBoundary--SE1vrFejLOV0IcnsFIdHwQ99lFKGCDtAOgFaTd5dTd----
+------MultipartBoundary--ZxYlBb0ZNZ0LoNIxqZMnhKZUconwVXF944AIyu4Ags----
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
-Content-Location: cid:css-ff61752f-63b1-4d4e-a445-9ac97aa85d40@mhtml.blink
+Content-Location: cid:css-7a851a64-2439-43e3-9dd5-f38dfdb0f847@mhtml.blink
 
 @charset "utf-8";
 
@@ -537,10 +537,10 @@ x 0px 6px; }
 rtant; }
 
 .CtxtMenu_MenuClose:hover:focus { outline: none; }
-------MultipartBoundary--SE1vrFejLOV0IcnsFIdHwQ99lFKGCDtAOgFaTd5dTd----
+------MultipartBoundary--ZxYlBb0ZNZ0LoNIxqZMnhKZUconwVXF944AIyu4Ags----
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
-Content-Location: cid:css-6b9a31f0-b585-4c32-9d3b-ccbb5cbc6dc2@mhtml.blink
+Content-Location: cid:css-29e3416a-8d48-4105-8002-3eb013c93bc3@mhtml.blink
 
 @charset "utf-8";
 
@@ -616,10 +616,10 @@ ackground-color: rgb(255, 255, 255); }
 ); }
 
 .CtxtMenu_Menu .CtxtMenu_MenuClose { top: -10px; left: -10px; }
-------MultipartBoundary--SE1vrFejLOV0IcnsFIdHwQ99lFKGCDtAOgFaTd5dTd----
+------MultipartBoundary--ZxYlBb0ZNZ0LoNIxqZMnhKZUconwVXF944AIyu4Ags----
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
-Content-Location: cid:css-328f495c-95b0-4e0e-8391-a914d8e1c539@mhtml.blink
+Content-Location: cid:css-58b43216-1561-43a9-aacf-15f3d2c2871c@mhtml.blink
 
 @charset "utf-8";
 
@@ -824,7 +824,7 @@ format("woff"); }
 @font-face { font-family: MJXTEX-VB; src: url("https://cdn.jsdelivr.net/npm=
 /mathjax@3.1.2/es5/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff") fo=
 rmat("woff"); }
-------MultipartBoundary--SE1vrFejLOV0IcnsFIdHwQ99lFKGCDtAOgFaTd5dTd----
+------MultipartBoundary--ZxYlBb0ZNZ0LoNIxqZMnhKZUconwVXF944AIyu4Ags----
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
 Content-Location: https://cs50.harvard.edu/x/2020/assets/bootstrap-table/dist/bootstrap-table.min.css?1616866076
@@ -1066,7 +1066,7 @@ th: 200px; height: 150px; overflow: hidden; }
   50% { opacity: 1; }
   100% { opacity: 0; }
 }
-------MultipartBoundary--SE1vrFejLOV0IcnsFIdHwQ99lFKGCDtAOgFaTd5dTd----
+------MultipartBoundary--ZxYlBb0ZNZ0LoNIxqZMnhKZUconwVXF944AIyu4Ags----
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
 Content-Location: https://cs50.harvard.edu/x/2020/assets/@fortawesome/fontawesome-free/css/all.min.css?1616866076
@@ -4118,7 +4118,7 @@ eight: 900; font-display: block; src: url("../webfonts/fa-solid-900.woff2")=
 .fa, .far, .fas { font-family: "Font Awesome 5 Free"; }
 
 .fa, .fas { font-weight: 900; }
-------MultipartBoundary--SE1vrFejLOV0IcnsFIdHwQ99lFKGCDtAOgFaTd5dTd----
+------MultipartBoundary--ZxYlBb0ZNZ0LoNIxqZMnhKZUconwVXF944AIyu4Ags----
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
 Content-Location: https://cs50.harvard.edu/x/2020/assets/page.css?1616866076
@@ -8744,7 +8744,7 @@ aside { background-color: rgb(0, 0, 0); }
 
 aside button[data-toggle=3D"collapse"]:not(.collapsed) { color: rgb(0, 0, 0=
 ); }
-------MultipartBoundary--SE1vrFejLOV0IcnsFIdHwQ99lFKGCDtAOgFaTd5dTd----
+------MultipartBoundary--ZxYlBb0ZNZ0LoNIxqZMnhKZUconwVXF944AIyu4Ags----
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
 Content-Location: https://fonts.googleapis.com/css?family=PT+Sans%7CPT+Sans:bold%7CPT+Sans:ital
@@ -8816,7 +8816,7 @@ src: url("https://fonts.gstatic.com/s/ptsans/v17/jizfRExUiTo99u79B_mh0O6tLR=
 8a8zI.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2=
 BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+2074, U+20=
 AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
-------MultipartBoundary--SE1vrFejLOV0IcnsFIdHwQ99lFKGCDtAOgFaTd5dTd----
+------MultipartBoundary--ZxYlBb0ZNZ0LoNIxqZMnhKZUconwVXF944AIyu4Ags----
 Content-Type: image/png
 Content-Transfer-Encoding: base64
 Content-Location: https://i.imgur.com/GGMdcKt.png
@@ -8831,4 +8831,4 @@ TRz75fGB0qWv1Vlq/Bo9Gzqo3oqu7g991G1bVQmp8IQcdeRtEGpyxoVVB5eNLob0qS6xpaJc5+J7
 Wx+wkwct5SoSn2vCOORKrHZk0lC69tAbm4a2g0grEuknvd9tb61XhqK8hz+d/xG/cft5fD0dvxA7
 qsLrj+EXWqBugRbeHl6qcbCr4Ba+7Tn88/kJk4CIztd1IrIAAAAASUVORK5CYII=
 
-------MultipartBoundary--SE1vrFejLOV0IcnsFIdHwQ99lFKGCDtAOgFaTd5dTd------
+------MultipartBoundary--ZxYlBb0ZNZ0LoNIxqZMnhKZUconwVXF944AIyu4Ags------
